@@ -1,2 +1,84 @@
-<h1>Hello World!</h1>
-<p>你好世界！</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header with navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showSection('blog')">Blog</a></li>
+        <li><a href="#" onclick="showSection('learning')">English Learning</a></li>
+        <li><a href="#" onclick="showSection('photos')">Photo Wall</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content area -->
+  <main>
+    <section id="home" class="section">
+      <h1>Welcome to My Personal Website</h1>
+      <p>This is where I share my blog posts, language learning notes, and photos!</p>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section" style="display:none;">
+      <h2>Blog</h2>
+      <div class="blog-post">
+        <h3>Post Title #1</h3>
+        <p>Published on: <strong>October 20, 2024</strong></p>
+        <p>This is the content of my first blog post. Here I talk about various things...</p>
+      </div>
+      <div class="blog-post">
+        <h3>Post Title #2</h3>
+        <p>Published on: <strong>October 19, 2024</strong></p>
+        <p>This is the content of my second blog post. Here I share some thoughts on...</p>
+      </div>
+    </section>
+
+    <!-- English Learning Section -->
+    <section id="learning" class="section" style="display:none;">
+      <h2>English Learning Journal</h2>
+      <div class="learning-entry">
+        <h3>October 20, 2024</h3>
+        <ul>
+          <li><strong>Word:</strong> "Serenity" - Peaceful and calm</li>
+          <li><strong>Phrase:</strong> "Break the ice" - To initiate conversation or activity</li>
+        </ul>
+      </div>
+      <div class="learning-entry">
+        <h3>October 19, 2024</h3>
+        <ul>
+          <li><strong>Word:</strong> "Eloquent" - Fluent or persuasive in speaking or writing</li>
+          <li><strong>Phrase:</strong> "A blessing in disguise" - A good thing that seems bad at first</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Photo Wall Section -->
+    <section id="photos" class="section" style="display:none;">
+      <h2>My Photo Wall</h2>
+      <div class="photo">
+        <img src="image1.jpg" alt="Photo 1">
+        <p>Description of Photo 1</p>
+      </div>
+      <div class="photo">
+        <img src="image2.jpg" alt="Photo 2">
+        <p>Description of Photo 2</p>
+      </div>
+      <!-- Add more photos as needed -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Your Name</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
